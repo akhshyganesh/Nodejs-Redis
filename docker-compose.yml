@@ -4,8 +4,6 @@ services:
   redis:
     image: redis
     container_name: redis
-    ports:
-      - "6379:6379"
 
   nodejs:
     build:
@@ -14,4 +12,4 @@ services:
     depends_on:
       - redis
     ports:
-      - "3000:3000"
+      - "80:3000"
