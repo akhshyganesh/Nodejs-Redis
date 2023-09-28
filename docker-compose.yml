@@ -10,7 +10,6 @@ services:
   nodejs:
     build:
       context: .
-      dockerfile: Dockerfile
     container_name: node
     depends_on:
       - redis
